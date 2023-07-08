@@ -1,0 +1,83 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title> Movies App</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <style></style>
+  <body>
+    <nav class="navbar">
+      <div class="navbar-container">
+        <div class="logo-container">
+          <img src="./logo.jpg" alt="Logo" class="navbar-logo" />
+        </div>
+        <div class="search-container">
+          <input
+            type="text"
+            class="search-input"
+            placeholder="Search Movies or TV Shows"
+          />
+        </div>
+        <div class="menu-container">
+          <a href="#" class="navbar-link">Movies</a>
+          <a href="#" class="navbar-link">TV Shows</a>
+          <a href="#" class="navbar-link">Wishlist</a>
+          <img src="avt.jpg" alt="" />
+        </div>
+      </div>
+    </nav>
+    <main>
+      <div class="container">
+        <div class="sidebar">
+          <div class="sidebar-genre">
+            <h3 style="color: #fff">Genre</h3>
+            <p onclick="genreSearch(28,`Action`)">Action</p>
+            <p onclick="genreSearch( 12, `Adventure`)">Adventure</p>
+            <p onclick="genreSearch(16, `Animation`)">Animation</p>
+            <p onclick="genreSearch(35, `Comedy`)">Comedy</p>
+            <p onclick="genreSearch(18, `Drama`)">Drama</p>
+            <p onclick="genreSearch(14, `Fantasy`)">Fantasy</p>
+            <p onclick="genreSearch(27, `Horror`)">Horror</p>
+            <p onclick="genreSearch(878, `Sci-fi`)">Sci-fi</p>
+            <p onclick="genreSearch(10770, `adult`)">adult</p>
+          </div>
+          <div class="sidebar-language">
+            <h3 style="color: #fff">Languages</h3>
+            <p onclick="languageSearch(`en`, `English`)">English</p>
+            <p onclick="languageSearch('hi', 'Hindi')">Hindi</p>
+            <p onclick="languageSearch('mr', 'Marathi')">Marathi</p>
+            <p>Telugu</p>
+            <p>Tamil</p>
+            <p>Kannada</p>
+            <p>More ...</p>
+          </div>
+        </div>
+        <div class="main-content">
+          <div class="movie-cards"></div>
+          <div class="movie-cards"></div>
+          <!-- modal -->
+          <div id="modal" class="modal">
+            <div class="modal-content"></div>
+          </div>
+          <div class="new-content">
+            <div class="new-content"></div>
+          </div>
+        </div>
+        <div id="trailer-container"></div>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+    <script src="srch.js"></script>
+    <script src="trailor.js"></script>
+  </body>
+</html>
